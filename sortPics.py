@@ -3,6 +3,7 @@ import shutil
 
 def copyFiles(folder, fileList):
     for filename in fileList:
+        print(filename)
         old_path = f'./{folder}'
         new_path = f'./{folder}/jpeg' if str.lower(filename).endswith(".jpg") else f'./{folder}/raw'
         source = os.path.join(old_path, filename)
@@ -21,7 +22,7 @@ if __name__ == "__main__":
         exit()
 
     for folder in folders:
-        curr_dir = os.listdir(f'./{folder}')
+        curr_dir = os.walk(f'./{folder}')
         if 'raw' in curr_dir and 'jpeg' in curr_dir:
             copyFiles(folder, curr_dir)
         else:
@@ -30,4 +31,7 @@ if __name__ == "__main__":
                 os.mkdir(f'./{folder}/raw')
                 copyFiles(folder, curr_dir)
             except:
-                print('Unable to create new folders')
+                print(f'Process might have already been completed for the folder: {folder}')
+                exit()
+    
+    print('Process completed.\nYou can now check and delete the files outside of the "raw" and "jpeg" folders.')
