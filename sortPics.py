@@ -1,5 +1,6 @@
 import os
 import shutil
+from sys import exit
 
 def copyFiles(folder, fileList):
     for filename in fileList:
