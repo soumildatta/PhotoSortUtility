@@ -5,7 +5,7 @@ A script to automate sorting RAW and JPEG files into a raw and jpeg folder. It d
 The script works when it is in the same folder that contains the other photos folder. These photo folders will contain jpeg and raw files that will then be sorted.
 ```
 photos
-├── script.py
+├── sortPics.py
 ├── PhotoFolder1
 |   ├── *.jpeg
 |   └── *.raw
@@ -20,4 +20,4 @@ photos
 * Have python3 installed on your computer
 
 ## Run Script 
-To run this script, make sure the script is in your photos folder, and outside the subfolders as shown in the example folder hierarchy above. Open a terminal and `cd` into the photos directory and run the script with `python sortFiles.py`. Your files will now be sorted and the originals can be deleted after inspection. 
+To run this script, make sure the script is in your photos folder, and outside the subfolders as shown in the example folder hierarchy above. Open a terminal and `cd` into the photos directory and run the script with `python sortPics.py`. Your files will now be sorted and the originals can be deleted after inspection. 
