@@ -23,3 +23,13 @@ photos
 
 ## Run Script 
 To run this script, make sure the script is in your photos folder, and outside the subfolders as shown in the example folder hierarchy above. Open a terminal and `cd` into the photos directory and run the script with `python sortPics.py`. Your files will now be sorted and the originals can be deleted after inspection.
+
+## Contributing 
+To contribute to this project, follow these steps:
+1. Fork the repo
+2. Clone the project to your local machine
+3. Commit changes to your own branch
+4. Push your work to your fork
+5. Submit a Pull request so your changes can be reviewed
+
+
